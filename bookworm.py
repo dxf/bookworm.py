@@ -10,6 +10,7 @@ while True:
     card = input('Welcome! To exit at any time, scan the exit code with the barcode scanner, located below the screen. \nScan your card: ')
     print(clear)
     print(f'Logged in as {card}.\n')
+    
     service = input('What would you like to do? (Scan the code below the screen!) ')
     if service == "9999999999994":
         print(clear)
