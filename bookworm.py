@@ -60,13 +60,15 @@ while True:
                     time.sleep(5)
                     print(clear)
                 except(PermissionError):
-                    print('Failed to write to spreadsheet. Ask the librarian to try and solve the issue and/or check out manually.')
+                    print('Failed to write to spreadsheet. Ask the librarian to try and solve the issue and/or check in manually.')
                     time.sleep(5)
                     print(clear)
         except(IndexError):
             print('Book not recognised. Did you scan the right barcode? The long one, usually on the back of the book. Otherwise, check out manually with the librarian.')
             time.sleep(5)
             print(clear)
+     if service == "9999999999992":
+        print('Exiting. Thanks for using the library!')
     else:
         print('Function not recognised! Try scanning the function code again, or ask the librarian to check you out manually.')
         time.sleep(5)
